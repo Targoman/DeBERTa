@@ -28,10 +28,10 @@ RUN pip install -r /work/requirements.txt
 
 #RUN pip3 install -q beautifulsoup4 progressbar2 nltk==3.4.1 html2text
 
-RUN python -c "import nltk;nltk.download('punkt')"
+RUN python3 -c "import nltk;nltk.download('punkt')"
 
 #RUN pip3 install -q joblib tqdm ftfy spacy==2.1.4
-RUN python -m spacy download en
+RUN python3 -m spacy download en
 
 #RUN pip3 install numpy==1.16.3 scipy==1.2.1 matplotlib jupyter pandas==0.24.2 sympy==1.4 nose==1.3.7 sklearn 
 #RUN pip3 install torch===1.3.1 torchvision===0.4.0 -f https://download.pytorch.org/whl/torch_stable.html
